@@ -1,0 +1,2 @@
+# ecart-core
+core library
