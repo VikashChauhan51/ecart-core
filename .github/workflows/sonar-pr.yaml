@@ -38,7 +38,7 @@ jobs:
         run: |
           New-Item -Path .\.sonar\scanner -ItemType Directory
           dotnet tool update dotnet-sonarscanner --tool-path .\.sonar\scanner
-        working-directory: ./
+        working-directory: src
 
       - name: Build and analyze
         env:
@@ -49,4 +49,4 @@ jobs:
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"VikashChauhan51_ecart-core" /o:"vikashchauhan51" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
            dotnet build
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
-        working-directory: ./
+        working-directory: src
