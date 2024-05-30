@@ -6,7 +6,7 @@ on:
 
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  NODE_VERSION: 21
+  NODE_VERSION: 22.1.0
   DOTNET_VERSION: '8.0.x'
 
 jobs:
@@ -15,26 +15,31 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+
       - name: Setup .NET Core
         uses: actions/setup-dotnet@v1
         with:
           dotnet-version: ${{ env.DOTNET_VERSION }}
 
-      - name: Install dependencies
+      - name: Install .NET dependencies
         run: dotnet restore
         working-directory: src
-      - name: Build
+
+      - name: Build .NET project
         run: dotnet build --configuration Release --no-restore
         working-directory: src
+
       - name: List directory contents
         run: ls -al
+
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
           node-version: ${{ env.NODE_VERSION }}
-      - name: Install dependencies
+
+      - name: Install node dependencies
         run: npm install
-        working-directory: ./
+
       - name: Print GITHUB_SHA
         run: echo $GITHUB_SHA
 
@@ -45,5 +50,5 @@ jobs:
 
       - name: Publish NuGet package
         run: |
-          dotnet nuget push Ecart.Core/bin/Release/*.nupkg --source https://nuget.pkg.github.com/vikashchauhan51/index.json --api-key ${{ secrets.GH_TOKEN }}
+          dotnet nuget push src/Ecart.Core/bin/Release/*.nupkg --source https://nuget.pkg.github.com/vikashchauhan51/index.json --api-key ${{ secrets.GITHUB_TOKEN }}
         working-directory: src

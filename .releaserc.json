@@ -104,15 +104,18 @@
           "CHANGELOG.md",
           "src/Ecart.Core/Ecart.Core.csproj"
         ],
-        "message": "chore(release):${nextRelease.version} [skip ci]\n\n ${nextRelease.notes}"
+        "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
       }
     ],
     [
       "@semantic-release/github",
       {
-        "path": "@semantic-release/github",
-        "label": "semantic_versioning_example_v${nextRelease.version}.zip",
-        "name": "semantic_versioning_example_v${nextRelease.version}.zip"
+        "assets": [
+          {
+            "path": "semantic_versioning_example_v${nextRelease.version}.zip",
+            "label": "Release ${nextRelease.version}"
+          }
+        ]
       }
     ],
     [
@@ -123,12 +126,14 @@
     ]
   ],
   "npmPublish": false,
-  "nugetServer": "https://api.nuget.org/v3/index.json",
+  "nugetServer": "https://nuget.pkg.github.com/vikashchauhan51/index.json",
   "projectPath": "src/Ecart.Core/Ecart.Core.csproj",
   "includeSymbols": true,
   "files": [
     {
-      "path": ["src/Ecart.Core/Ecart.Core.csproj"],
+      "path": [
+        "src/Ecart.Core/Ecart.Core.csproj"
+      ],
       "type": "xml",
       "replacements": [
         {
