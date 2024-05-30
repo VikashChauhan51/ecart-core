@@ -126,7 +126,7 @@
     ]
   ],
   "npmPublish": false,
-  "nugetServer": "https://nuget.pkg.github.com/vikashchauhan51/index.json",
+  "nugetServer": "https://api.nuget.org/v3/index.json",
   "projectPath": "src/Ecart.Core/Ecart.Core.csproj",
   "includeSymbols": true,
   "files": [
