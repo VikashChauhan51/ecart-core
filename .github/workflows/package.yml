@@ -6,6 +6,7 @@ on:
 
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  NUGET_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   NODE_VERSION: 21
   DOTNET_VERSION: '8.0.x'
 
@@ -41,6 +42,7 @@ jobs:
     - name: Release
       env:
        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+       NUGET_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: npx semantic-release
       working-directory: ./
     - name: Publish NuGet package
