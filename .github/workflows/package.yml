@@ -47,5 +47,5 @@ jobs:
       working-directory: ./
     - name: Publish NuGet package
       run: |
-        dotnet nuget push src/Ecart.Core/bin/Release/*.nupkg --source https://nuget.pkg.github.com/vikashchauhan51/index.json --api-key ${{ secrets.GITHUB_TOKEN }}
+        dotnet nuget push Ecart.Core/bin/Release/*.nupkg --source https://nuget.pkg.github.com/vikashchauhan51/index.json --api-key ${{ secrets.GITHUB_TOKEN }}
       working-directory: src
