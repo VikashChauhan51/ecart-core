@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/VikashChauhan51/ecart-core/compare/v1.0.0...v1.0.1) (2024-06-01)
+
+
+### Fix
+
+* duplicate Package ([bf5019b](https://github.com/VikashChauhan51/ecart-core/commit/bf5019b5a7be726ce9d4d6e075212944e201eb64))
+
 # 1.0.0 (2024-06-01)
 
 
