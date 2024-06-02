@@ -8,13 +8,13 @@ using Microsoft.Extensions.Logging;
 namespace Ecart.Core.Handlers;
 
 
-public class CustomExceptionHandler
-    (ILogger<CustomExceptionHandler> logger)
+public class ExceptionHandler
+    (ILogger<ExceptionHandler> logger)
     : IExceptionHandler
 {
     public async ValueTask<bool> TryHandleAsync(HttpContext httpContext, Exception exception, CancellationToken cancellationToken)
     {
-        logger.LogError(
+        logger.LogError(exception,
             "Error Message: {exceptionMessage}, Time of occurrence {time}",
             exception.Message, DateTime.UtcNow);
 
