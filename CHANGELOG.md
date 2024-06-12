@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/VikashChauhan51/ecart-core/compare/v1.1.0...v1.2.0) (2024-06-12)
+
+
+### New
+
+* Added  RabbitMQ (#10) ([319c73e](https://github.com/VikashChauhan51/ecart-core/commit/319c73ef0e579f5ea3ae4189fbfbb47c2cfbb68f)), closes [#10](https://github.com/VikashChauhan51/ecart-core/issues/10)
+
 # [1.1.0](https://github.com/VikashChauhan51/ecart-core/compare/v1.0.1...v1.1.0) (2024-06-02)
 
 
