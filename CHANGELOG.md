@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/VikashChauhan51/ecart-core/compare/v1.2.0...v1.3.0) (2024-06-13)
+
+
+### New
+
+* Added dapr support (#11) ([24bc86a](https://github.com/VikashChauhan51/ecart-core/commit/24bc86a2db48102639e4596674fba9f2559f7799)), closes [#11](https://github.com/VikashChauhan51/ecart-core/issues/11)
+
 # [1.2.0](https://github.com/VikashChauhan51/ecart-core/compare/v1.1.0...v1.2.0) (2024-06-12)
 
 
