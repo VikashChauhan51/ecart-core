@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/VikashChauhan51/ecart-core/compare/v1.3.0...v1.3.1) (2024-06-15)
+
+
+### Fix
+
+* Updated configuration (#12) ([0443f92](https://github.com/VikashChauhan51/ecart-core/commit/0443f924df2b22e98028920885963e8d6c63c45f)), closes [#12](https://github.com/VikashChauhan51/ecart-core/issues/12)
+
 # [1.3.0](https://github.com/VikashChauhan51/ecart-core/compare/v1.2.0...v1.3.0) (2024-06-13)
 
 
