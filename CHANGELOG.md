@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/VikashChauhan51/ecart-core/compare/v1.3.1...v1.4.0) (2024-06-18)
+
+
+### New
+
+* Added SeriLogger (#13) ([df6c8ae](https://github.com/VikashChauhan51/ecart-core/commit/df6c8ae6056fda6a1be589a6bd9f392d4ffee2ca)), closes [#13](https://github.com/VikashChauhan51/ecart-core/issues/13)
+
 ## [1.3.1](https://github.com/VikashChauhan51/ecart-core/compare/v1.3.0...v1.3.1) (2024-06-15)
 
 
