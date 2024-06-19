@@ -1,50 +1,52 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-	<VersionPrefix>1.4.0</VersionPrefix>
-    <SignAssembly>True</SignAssembly>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Title>ecart-core</Title>
-    <Description>ecart-core nuget package.</Description>
-    <PackageProjectUrl>https://github.com/VikashChauhan51/random-generator</PackageProjectUrl>
-    <Authors>VikashChauhan51</Authors>
-    <Copyright>Copyright © VikashChauhan51, 2024</Copyright>
-    <RepositoryUrl>https://github.com/VikashChauhan51/semantic-versioning-example.git</RepositoryUrl>
-    <RepositoryBranch>main</RepositoryBranch>
-    <ProjectGuid>{AFDC07BB-4567-45BC-ADC1-A46E92C29977}</ProjectGuid>
-    <PackageTags>ecart-core</PackageTags>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
-    <AssemblyOriginatorKeyFile>..\EcartCore.snk</AssemblyOriginatorKeyFile>
-    <RepositoryType>git</RepositoryType>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<VersionPrefix>1.4.0</VersionPrefix>
+		<SignAssembly>True</SignAssembly>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Title>ecart-core</Title>
+		<Description>ecart-core nuget package.</Description>
+		<PackageProjectUrl>https://github.com/VikashChauhan51/random-generator</PackageProjectUrl>
+		<Authors>VikashChauhan51</Authors>
+		<Copyright>Copyright © VikashChauhan51, 2024</Copyright>
+		<RepositoryUrl>https://github.com/VikashChauhan51/semantic-versioning-example.git</RepositoryUrl>
+		<RepositoryBranch>main</RepositoryBranch>
+		<ProjectGuid>{AFDC07BB-4567-45BC-ADC1-A46E92C29977}</ProjectGuid>
+		<PackageTags>ecart-core</PackageTags>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<AssemblyOriginatorKeyFile>..\EcartCore.snk</AssemblyOriginatorKeyFile>
+		<RepositoryType>git</RepositoryType>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="AspNetCore.HealthChecks.Kafka" Version="8.0.1" />
-    <PackageReference Include="AspNetCore.HealthChecks.NpgSql" Version="8.0.1" />
-    <PackageReference Include="AspNetCore.HealthChecks.Rabbitmq" Version="8.0.1" />
-    <PackageReference Include="AspNetCore.HealthChecks.Redis" Version="8.0.1" />
-    <PackageReference Include="AspNetCore.HealthChecks.SqlServer" Version="8.0.2" />
-	<PackageReference Include="AspNetCore.HealthChecks.OpenIdConnectServer" Version="8.0.1" />
-	<PackageReference Include="Dapr.AspNetCore" Version="1.13.1" />
-	<PackageReference Include="Dapr.Extensions.Configuration" Version="1.13.1" />
-	<PackageReference Include="Polly" Version="8.4.0" />
-    <PackageReference Include="FluentValidation" Version="11.9.2" />
-    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
-    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.9.2" />
-    <PackageReference Include="Mapster" Version="7.4.0" />
-    <PackageReference Include="MediatR" Version="12.3.0" />
-    <PackageReference Include="Microsoft.FeatureManagement.AspNetCore" Version="3.3.1" />
-    <PackageReference Include="Refit" Version="7.0.0" />
-    <PackageReference Include="Serilog.AspNetCore" Version="8.0.1" />
-    <PackageReference Include="Serilog.Enrichers.Environment" Version="3.0.0" />
-  </ItemGroup>
- <ItemGroup>
-    <None Include="..\..\README.md">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="AspNetCore.HealthChecks.Kafka" Version="8.0.1" />
+		<PackageReference Include="AspNetCore.HealthChecks.NpgSql" Version="8.0.1" />
+		<PackageReference Include="AspNetCore.HealthChecks.Rabbitmq" Version="8.0.1" />
+		<PackageReference Include="AspNetCore.HealthChecks.Redis" Version="8.0.1" />
+		<PackageReference Include="AspNetCore.HealthChecks.SqlServer" Version="8.0.2" />
+		<PackageReference Include="AspNetCore.HealthChecks.OpenIdConnectServer" Version="8.0.1" />
+		<PackageReference Include="Dapr.AspNetCore" Version="1.13.1" />
+		<PackageReference Include="Dapr.Extensions.Configuration" Version="1.13.1" />
+		<PackageReference Include="Polly" Version="8.4.0" />
+		<PackageReference Include="FluentValidation" Version="11.9.2" />
+		<PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+		<PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.9.2" />
+		<PackageReference Include="Mapster" Version="7.4.0" />
+		<PackageReference Include="MediatR" Version="12.3.0" />
+		<PackageReference Include="Microsoft.FeatureManagement.AspNetCore" Version="3.3.1" />
+		<PackageReference Include="Refit" Version="7.0.0" />
+		<PackageReference Include="Serilog.AspNetCore" Version="8.0.1" />
+		<PackageReference Include="Serilog.Enrichers.Environment" Version="3.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Http.Polly" Version="8.0.6" />
+		<PackageReference Include="Refit.HttpClientFactory" Version="7.0.0" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="..\..\README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
 </Project>
