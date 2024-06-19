@@ -1,21 +1,10 @@
 ﻿using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Net.Sockets;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Ecart.Core.Handlers;
-public class LoggingDelegatingHandler : DelegatingHandler
+public class LoggingInterceptor(ILogger<LoggingInterceptor> logger) : DelegatingHandler
 {
-    private readonly ILogger<LoggingDelegatingHandler> logger;
-
-    public LoggingDelegatingHandler(ILogger<LoggingDelegatingHandler> logger)
-    {
-        this.logger = logger;
-    }
 
     protected override async Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
     {

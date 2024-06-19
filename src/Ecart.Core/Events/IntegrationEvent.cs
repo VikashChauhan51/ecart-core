@@ -1,5 +1,7 @@
-﻿namespace Ecart.Core.Events;
-public record IntegrationEvent
+﻿using Ecart.Core.Domain;
+
+namespace Ecart.Core.Events;
+public record IntegrationEvent: IDomainEvent
 {
     public Guid Id => Guid.NewGuid();
     public DateTime OccurredOn => DateTime.Now;
