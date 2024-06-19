@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/VikashChauhan51/ecart-core/compare/v1.5.0...v1.6.0) (2024-06-19)
+
+
+### New
+
+* Domain abstraction implemented ([354360f](https://github.com/VikashChauhan51/ecart-core/commit/354360f85efa8f4be5623f342392b142ce842af1))
+
 # [1.5.0](https://github.com/VikashChauhan51/ecart-core/compare/v1.4.0...v1.5.0) (2024-06-19)
 
 
