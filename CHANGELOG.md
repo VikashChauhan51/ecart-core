@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/VikashChauhan51/ecart-core/compare/v1.4.0...v1.5.0) (2024-06-19)
+
+
+### New
+
+* Added Resilience ([19cbb36](https://github.com/VikashChauhan51/ecart-core/commit/19cbb36328a5b834a4dacc35f94c1c1dd41f6682))
+
 # [1.4.0](https://github.com/VikashChauhan51/ecart-core/compare/v1.3.1...v1.4.0) (2024-06-18)
 
 
