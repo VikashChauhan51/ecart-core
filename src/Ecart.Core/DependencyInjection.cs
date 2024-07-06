@@ -11,6 +11,7 @@ public static class DependencyInjection
         (this IServiceCollection services)
     {
         services.AddScoped(typeof(IContentStore<>), typeof(ContentStore<>));
+        services.AddScoped(typeof(IEventPublisher<>), typeof(EventPublisher<>));
         services.AddScoped<ISecretStore, SecretStore>();
         return services;
     }
