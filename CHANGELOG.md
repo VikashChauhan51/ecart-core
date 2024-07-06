@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/VikashChauhan51/ecart-core/compare/v1.6.0...v1.7.0) (2024-07-06)
+
+
+### New
+
+* Added pubsub service ([9ab26a0](https://github.com/VikashChauhan51/ecart-core/commit/9ab26a0b5c9b621ba63bc12c3df5efe57de12958))
+
 # [1.6.0](https://github.com/VikashChauhan51/ecart-core/compare/v1.5.0...v1.6.0) (2024-06-19)
 
 
