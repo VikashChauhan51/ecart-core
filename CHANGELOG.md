@@ -1,3 +1,10 @@
+## [1.7.1](https://github.com/VikashChauhan51/ecart-core/compare/v1.7.0...v1.7.1) (2024-11-30)
+
+
+### Fix
+
+* removed cqrs from infra core ([98c5db2](https://github.com/VikashChauhan51/ecart-core/commit/98c5db2f0be7ee44b9b74bd3cca0f17ce078fe38))
+
 # [1.7.0](https://github.com/VikashChauhan51/ecart-core/compare/v1.6.0...v1.7.0) (2024-07-06)
 
 
