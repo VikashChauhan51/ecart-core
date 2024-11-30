@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Hosting;
+﻿using Ecart.Core.Loggers.Enrichers;
+using Microsoft.Extensions.Hosting;
 using Serilog;
 
 namespace Ecart.Core.Loggers;
@@ -11,9 +12,13 @@ public static class SeriLogger
            configuration
                 .Enrich.FromLogContext()
                 .Enrich.WithMachineName()
-                .Enrich.With(new ThreadIdEnricher())
+                .Enrich.With(
+                new ThreadIdEnricher(),
+                new CLREnricher(),
+                new MachineEnricher(),
+                new ProcessEnricher())
                 .WriteTo.Debug()
-                .WriteTo.Console(outputTemplate: "{Timestamp:HH:mm} [{Level}] ({ThreadId}) {Message}{NewLine}{Exception}")
+                .WriteTo.Console()
                 .Enrich.WithProperty("Environment", context.HostingEnvironment.EnvironmentName)
                 .Enrich.WithProperty("Application", context.HostingEnvironment.ApplicationName)
                 .ReadFrom.Configuration(context.Configuration);
