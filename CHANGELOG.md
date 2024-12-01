@@ -1,3 +1,10 @@
+## [1.7.2](https://github.com/VikashChauhan51/ecart-core/compare/v1.7.1...v1.7.2) (2024-12-01)
+
+
+### Fix
+
+* removed pagination code ([566386e](https://github.com/VikashChauhan51/ecart-core/commit/566386e25cd45b707d8ffe85d58ae84373fe4a2e))
+
 ## [1.7.1](https://github.com/VikashChauhan51/ecart-core/compare/v1.7.0...v1.7.1) (2024-11-30)
 
 
