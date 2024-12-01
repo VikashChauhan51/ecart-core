@@ -8,10 +8,8 @@ public static class SeriLogger
     public static Action<HostBuilderContext, LoggerConfiguration> Configure =>
        (context, configuration) =>
        {
-
            configuration
                 .Enrich.FromLogContext()
-                .Enrich.WithMachineName()
                 .Enrich.With(
                 new ThreadIdEnricher(),
                 new CLREnricher(),
